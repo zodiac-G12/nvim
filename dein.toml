@@ -1,0 +1,57 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+'''
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+hook_add = '''
+  let g:coc_global_extensions = [
+    \ 'coc-rls',
+    \ 'coc-tsserver',
+    \ ]
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+hook_add = '''
+  let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+  nnoremap <leader>f :FZF<CR>
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  nnoremap <leader>n :NERDTreeToggle<CR>
+'''
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'preservim/nerdcommenter'
+
+# カラースキーマ
+[[plugins]]
+repo = 'morhetz/gruvbox'
+
+# コメントアウトをまとめてやるやつ
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+#Node require modules ref jummper
+[[plugins]]
+repo = 'moll/vim-node'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
