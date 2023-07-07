@@ -26,8 +26,12 @@ syntax enable
 " coc.nvimの設定
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
+  \ 'coc-rust-analyzer',
   \ 'coc-rls',
   \ ]
+
+" rust-analyzerの設定
+let g:rust_analyzer_server_path = 'rust-analyzer'
 
 " TypeScriptのLSP設定
 autocmd FileType typescript setlocal omnifunc=coc#refresh()
