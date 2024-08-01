@@ -56,9 +56,16 @@ set hls                "検索した文字をハイライトする
 " inoremap ( ()<LEFT>
 colorscheme gruvbox
 set termguicolors
+highlight Normal guibg=NONE
 let g:indent_guides_auto_colors=1
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
+
+let g:svelte_indent_script=0
+let g:svelte_indent_style=0
+
+set fileencoding=UTF-8
+set fenc=UTF-8
 
 "\d で定義にジャンプ
 nnoremap <leader>d :CocCommand tsserver.goToSourceDefinition<CR>

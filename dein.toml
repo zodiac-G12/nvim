@@ -56,3 +56,9 @@ repo = 'moll/vim-node'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]] # Svelte.js
+repo = 'evanleck/vim-svelte'
+
+[[plugins]]
+repo = 'czheo/mojo.vim'
