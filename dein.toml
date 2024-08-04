@@ -13,6 +13,8 @@ hook_add = '''
     \ 'coc-tsserver',
     \ ]
 '''
+source = 'release'
+build = 'coc#util#install()'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'

@@ -67,6 +67,8 @@ let g:svelte_indent_style=0
 set fileencoding=UTF-8
 set fenc=UTF-8
 
+set noswapfile
+
 "\d で定義にジャンプ
 nnoremap <leader>d :CocCommand tsserver.goToSourceDefinition<CR>
 "\g で定義から元の場所にジャンプ
