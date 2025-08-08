@@ -1,18 +1,25 @@
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = '''
-  let g:deoplete#enable_at_startup = 1
-'''
+# ▼ 重複回避：coc.nvimを使うなら deoplete は外す or 完全遅延＋手動トグル
+# [[plugins]]
+# repo = 'Shougo/deoplete.nvim'
+# on_event = 'InsertEnter'
+# hook_add = '''
+#   let g:deoplete#enable_at_startup = 0
+# '''
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
+source = 'release'
+# coc は通常読み込み推奨（初期化遅延で不具合が出やすい）
 hook_add = '''
   let g:coc_global_extensions = [
-    \ 'coc-rls',
     \ 'coc-rust-analyzer',
     \ 'coc-tsserver',
+    \ 'coc-json',
+    \ 'coc-prettier',
     \ ]
 '''
+# build は release なら通常不要。必要なら:
+# build = 'coc#util#install()'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
@@ -25,32 +32,21 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
 repo = 'vim-airline/vim-airline'
 
 [[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  nnoremap <leader>n :NERDTreeToggle<CR>
-'''
+repo = 'tpope/vim-surround'        # 軽量：常時読み込みでもOK
 
-[[plugins]]
-repo = 'tpope/vim-surround'
-
+# コメント系はどれか1つに
 [[plugins]]
 repo = 'tpope/vim-commentary'
 
 [[plugins]]
-repo = 'preservim/nerdcommenter'
-
-# カラースキーマ
-[[plugins]]
 repo = 'morhetz/gruvbox'
 
-# コメントアウトをまとめてやるやつ
-[[plugins]]
-repo = 'tomtom/tcomment_vim'
-
-#Node require modules ref jummper
 [[plugins]]
 repo = 'moll/vim-node'
 
@@ -62,3 +58,9 @@ repo = 'evanleck/vim-svelte'
 
 [[plugins]]
 repo = 'czheo/mojo.vim'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+
+[[plugins]]
+repo = 'HerringtonDarkholme/yats.vim'
