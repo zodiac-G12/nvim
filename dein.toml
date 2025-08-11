@@ -16,6 +16,7 @@ hook_add = '''
     \ 'coc-tsserver',
     \ 'coc-json',
     \ 'coc-prettier',
+    \ '@yaegassy/coc-tailwindcss3',
     \ ]
 '''
 # build は release なら通常不要。必要なら:

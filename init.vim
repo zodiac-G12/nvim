@@ -32,6 +32,7 @@ let g:coc_global_extensions = [
   \ 'coc-rls',
   \ 'coc-json',
   \ 'coc-prettier',
+  \ '@yaegassy/coc-tailwindcss3',
   \ ]
 
 """""""""" LSP設定
