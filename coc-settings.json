@@ -22,5 +22,7 @@
         "typescript.updateImportsOnFileMove.enabled": "always"
       }
     }
-  }
+  },
+  "tsserver.tsconfigPath": "./tsconfig.json",
+  "tsserver.experimental.enableProjectDiagnostics": true
 }
